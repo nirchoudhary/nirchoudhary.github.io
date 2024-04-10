@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nir - developer portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: rgb(8, 1, 28);
+            color: honeydew;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 75px;
+            background-color: rgb(7, 25, 41);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav ul li a:hover {
+            color: rgb(66, 77, 86);
+        }
+        
+        .left {
+            font-size: 1.6rem;
+        }
+        
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 800px;
+        }
+        
+        .firstsection>div {
+            width: 60%;
+        }
+        
+        .leftsection {
+            font-size: 2rem;
+            margin-top: 30px;
+            padding-left: 200px;
+        }
+        
+        .purple {
+            color: aqua;
+        }
+        
+        .rightsection {
+            width: 60%;
+        }
+        
+        .rightsection img {
+            width: 446px;
+        }
+        
+        .cyan {
+            color: cyan;
+        }
+        
+        .right li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .right li a:hover {
+            text-decoration: none;
+            color: rgb(137, 128, 242);
+        }
+        
+        #element {
+            color: aqua;
+        }
+        
+        .secondsection {
+            height: 200vh;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        
+        .secondsection img {
+            height: 450px;
+            width: 400px;
+        }
+        
+        .leftsection .button {
+            padding: 50px 0;
+        }
+        
+        .button .btn {
+            background-color: rgb(8, 1, 28);
+            color: aliceblue;
+            padding: 6px;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        .container {
+            max-width: 1170px;
+            margin: auto;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .footer {
+            width: 100%;
+            background-color: rgb(24, 35, 36);
+            padding: 70px 0px;
+        }
+        
+        .footer-col {
+            width: 22%;
+            padding: 0 15px;
+        }
+        
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .footer-col h4::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+        
+        .footer-col .social-links a {
+            transition: all 0.5s ease;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+        }
+        
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+        
+        @media (max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                padding: 0 15px;
+                margin-bottom: 30px;
+            }
+        }
+        
+        #rightsection img {
+            background-color: rgb(8, 1, 28);
+        }
+        
+        #about {
+            padding: 80px 0;
+            color: #ababab;
+        }
+        
+        .row {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .about-col-1 {
+            flex-basis: 35%;
+        }
+        
+        .about-col-1 img {
+            width: 100%;
+            border-radius: 30px;
+        }
+        
+        .about-col-2 {
+            flex-basis: 60%;
+        }
+        
+        .sub-title {
+            font-size: 60px;
+            font-weight: 600;
+            color: white;
+        }
+        
+        .tab-title {
+            display: flex;
+            margin: 20px 0 40px;
+        }
+        
+        .tab-links {
+            margin-right: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .tab-links::after {
+            content: "";
+            width: 0;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            transition: 0.5s;
+        }
+        
+        .tab-links.active-link::after {
+            width: 50%;
+        }
+        
+        .tab-contents ul li {
+            list-style: none;
+            margin: 10px 0;
+        }
+        
+        .tab-contents ul li span {
+            color: #b54769;
+            font-size: 14px;
+        }
+        
+        .tab-contents {
+            display: none;
+        }
+        
+        .active-tab {
+            display: block;
+        }
+        
+        #services {
+            padding: 30px 0;
+        }
+        
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .services-list div {
+            background: #262626;
+            padding: 40px;
+            font-size: 13px;
+            font-weight: 300;
+            border-radius: 10px;
+            transition: background 0.5s, transform 0.5s;
+        }
+        
+        .services-list div i {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        
+        .services-list div h2 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .services-list div a {
+            text-decoration: none;
+            color: #fff;
+            margin-top: 20px;
+            font-size: 12px;
+            display: inline-block;
+        }
+        
+        .services-list div:hover {
+            background-color: cyan;
+            transform: translateY(-10px);
+        }
+        
+        #portfolio {
+            padding: 50px 0;
+        }
+        
+        .work-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .work {
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .work img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            display: block;
+        }
+        
+        .layer {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Nir portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <b>Hey!!</b>...my name is <span class="purple">"Nir"</span>
+                <div>And I Am a Passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="robo.png" alt="#" />
+            </div>
+        </section>
+        <hr />
+        <section class="secondsection" id="about">
+            <div class="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="job.png" alt="#" />
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempore reprehenderit eius eveniet explicabo nulla doloribus voluptas illum nobis id! Iure non quibusdam cumque nobis magnam mollitia, dolorum tempora sunt. Perspiciatis, iste quam..
+                            </p>
+                            <div class="tab-title">
+                                <p class="tab-links active-link" onclick="openTab('skills')">
+                                    Skills
+                                </p>
+                                <p class="tab-links" onclick="openTab('experience')">
+                                    Experience
+                                </p>
+                                <p class="tab-links" onclick="openTab('education')">
+                                    Education
+                                </p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br />Design Web/App interfaces</li>
+                                    <li><span>Video Varphi</span><br />Create a content</li>
+                                    <li><span>Content Creation</span><br />Create a content</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2023</span><br />Design Web/App interfaces</li>
+                                    <li><span>2021</span><br />Create a content</li>
+                                    <li><span>2020</span><br />Create a content</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li>
+                                        <span>2019-22</span><br />complete my diploma in civil engineering
+                                    </li>
+                                    <li>
+                                        <span>2023-26</span><br />then i applied for B=tech course in CSE branch
+                                    </li>
+                                    <li><span>2027</span><br />Finally archive my dream job</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, s laboriosam veritatis culpa a eius doloremque aliquam.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, s laboriosam veritatis culpa a eius doloremque aliquam.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-video"></i>
+                        <h2>Video Creation</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, s laboriosam veritatis culpa a eius doloremque aliquam.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="work-1.jpg" alt="work-1" />
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corporis ut, provident voluptates cum quidem autem. Iste sed minima quibusdam maiores.
+                            </p>
+                            <a href=""><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-2.jpg" alt="work-2" />
+                        <div class="layer">
+                            <h3>Social Media Handling</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corporis ut, provident voluptates cum quidem autem. Iste sed minima quibusdam maiores.
+                            </p>
+                            <a href=""><i class="fas fa-hashtag"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-3.jpg" alt="work-3" />
+                        <div class="layer">
+                            <h3>Video Graphy</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corporis ut, provident voluptates cum quidem autem. Iste sed minima quibusdam maiores.
+                            </p>
+                            <a href=""><i class="fas fa-photo-video"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Option</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Graphic Designing</a></li>
+                        <li><a href="#">Video Editing</a></li>
+                        <li><a href="#">Software Making</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#element", {
+            strings: ["Web Developer", "Graphic Designer", "& Video Editor."],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        let tabLinks = document.getElementsByClassName("tab-links");
+        let tabContents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName) {
+            for (let i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active-link");
+            }
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active-tab");
+            }
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active-tab");
+            }
+
+            document.getElementById(tabName).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+
+        for (let i = 0; i < tabLinks.length; i++) {
+            tabLinks[i].addEventListener("click", function() {
+                openTab(this.getAttribute("onclick").split("'")[1]);
+            });
+        }
+    </script>
+</body>
+
+</html>
