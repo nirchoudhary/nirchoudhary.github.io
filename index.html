@@ -622,7 +622,74 @@
             background-color: #1ba4f6;
         }
         
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 767px) {
+            nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-links ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .menu-links ul li {
+    margin-bottom: 20px;
+  }
+
+  .menu-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+
+  .menu-links ul li a:hover {
+    color: #ffd700;
+  }
+
+  /* Footer column styles for mobile devices */
+  .footer-col {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  /* Hide the tab-links section on mobile devices */
+  .tab-links {
+    display: none;
+  }
+  .left {
+  font-size: 1.6rem;
+  margin-left: 13px;
+  margin-top: -17px;
+}
             .nav-container .right ul {
                 display: none;
                 position: absolute;
@@ -734,13 +801,23 @@
             }
             .leftsection {
                 font-size: 1.5rem;
+
+                  padding-left: 115px;
+            }
+            div.leftsection{
+                width: 70%;
+
             }
             .firstsection>div {
-                width: 85%;
+                width: 50%;
+                padding-left: 100px;
+                
             }
             .rightsection img {
-                width: 309px;
-                margin-top: -61px;
+                width: 400px;
+                margin-top: -51px;
+                padding-right: 200px;
+                margin-left: -57px;
             }
             .leftsection {
                 font-size: 1rem;
@@ -751,6 +828,62 @@
                 height: 456px;
             }
         }
+        @media screen and (min-width: 480px) and (max-width: 768px) {
+            .firstsection > div {
+    width: 50%;
+    padding-left: 57px;
+    font-size: 1rem;
+  }
+  .rightsection img {
+    width: 400px;
+    margin-top: -51px;
+    padding-right: 200px;
+    margin-left: -28px;
+  }
+  .about-col-1 {
+    margin-bottom: -38px;
+  }
+  .about-col-1 img {
+  width: 60%;
+  border-radius: 19px;
+  height: 100%;
+  margin-top: -55px;
+  margin-left: 17px;
+  margin-bottom: -28px;
+  padding-bottom: -44px;
+}
+.services-list {
+    margin-left: 43px;
+    margin-right: 44px;
+    margin-bottom: 203px;
+  }
+  /* Further adjustments for smaller screens */
+  .nav-container {
+    display: block;
+  }
+
+  /* Hide .nav-container .right section initially */
+  .nav-container .right {
+    display: none;
+  }
+
+  /* Display .menu-icon and activate dropdown menu */
+  .menu-icon {
+    display: block; /* Assuming .menu-icon is initially hidden */
+    /* Add your code to activate the dropdown menu when .menu-icon is clicked */
+  }
+
+  /* Display .menu-links as overlay menu */
+  .menu-links {
+    /* Add your code to display .menu-links as overlay when .menu-icon is clicked */
+  }
+
+  /* Hide .tab-links section */
+  .tab-links {
+    display: none;
+  }
+}
+
     </style>
 </head>
 
@@ -788,7 +921,7 @@
                 </div>
             </div>
             <div class="rightsection">
-                <img src="/img/mind.png" alt="#" />
+                <img src="mind.png" alt="#" />
             </div>
         </section>
 
@@ -798,7 +931,7 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="/img/about-Photoroom.png-Photoroom (1).png" alt="#" />
+                        <img src="about-Photoroom.png-Photoroom (1).png" alt="#" />
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title2">About Me</h1>
@@ -886,7 +1019,7 @@
                 <h1 class="sub-title">My Work</h1>
                 <div class="work-list">
                     <div class="work">
-                        <img src="/img/work-1.jpg" alt="work-1" />
+                        <img src="work-1.jpg" alt="work-1" />
                         <div class="layer">
                             <h3>Social Media App</h3>
                             <p>
@@ -896,7 +1029,7 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="/img/work-2.jpg" alt="work-2" />
+                        <img src="work-2.jpg" alt="work-2" />
                         <div class="layer">
                             <h3>Social Media Handling</h3>
                             <p>
@@ -906,7 +1039,7 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="/img/work-3.jpg" alt="work-3" />
+                        <img src="work-3.jpg" alt="work-3" />
                         <div class="layer">
                             <h3>Video Graphy</h3>
                             <p>
@@ -937,12 +1070,17 @@
                             <a href=""><i class="fa-brands fa-github"></i></i></a>
                             <a href=""><i class="fa-brands fa-linkedin-in"></i></i></a>
                         </div>
-                        <a href="/img/DSA Note no. 1.pdf" download class="btn btn2">Download CV</a>
+                        <a href="DSA Note no. 1.pdf" download class="btn btn2">Download CV</a>
 
                     </div>
                     <div class="contact-right">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJc4BqZFgjApLdcdeBxaV9icckTzTrBCnNHnJQLCZgVsuXZA/viewform?embedded=true" width="640" height="687" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                        <span id="msg">Hello</span>
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="Email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="Submit" class="btn btn2">Submit</button>
+                        </form>
+                        
                     </div>
                 </div>
             </div>
