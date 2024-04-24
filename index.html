@@ -102,36 +102,6 @@
             font-size: 1.6rem;
             margin-left: 204px;
         }
-        
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 641px;
-        }
-        
-        .firstsection>div {
-            width: 60%;
-        }
-        
-        .leftsection {
-            font-size: 2rem;
-            margin-top: 30px;
-            padding-left: 200px;
-        }
-        
-        .purple {
-            color: aqua;
-        }
-        
-        .rightsection {
-            width: 60%;
-        }
-        
-        .rightsection img {
-            width: 446px;
-        }
-        
         .cyan {
             color: cyan;
         }
@@ -145,36 +115,7 @@
             text-decoration: none;
             color: rgb(137, 128, 242);
         }
-        
-        #element {
-            color: aqua;
-        }
-        
-        .secondsection {
-            height: 200vh;
-            margin-top: 5%;
-            margin-left: 10%;
-        }
-        
-        .secondsection img {
-            height: 450px;
-            width: 400px;
-        }
-        
-        .leftsection .button {
-            padding: 50px 0;
-        }
-        
-        .button .btn3 {
-            background-color: rgb(8, 1, 28);
-            color: aliceblue;
-            padding: 6px;
-            border: 2px solid white;
-            border-radius: 5px;
-            font-size: 15px;
-            cursor: pointer;
-        }
-        
+    
         .container {
             max-width: 1170px;
             margin: auto;
@@ -188,20 +129,70 @@
         ul {
             list-style: none;
         }
-        
-        /*responsive*/
-        
-        @media (max-width: 767px) {
-            .footer-col {
-                width: 50%;
-                padding: 0 15px;
-                margin-bottom: 30px;
-            }
+        /* ----------------------------first-section---------------------------? */
+        .firstsection{
+
+            height: 200vh;
+            display: flex;
+            justify-content:space-around ;
+            margin: 23px 0;
+            width: 100%;
         }
-        
-        #rightsection img {
-            background-color: rgb(8, 1, 28);
+        /* .firstsection div{
+            width:40%;
+        } */
+        .div.leftsection{
+            width: 200px;
         }
+    
+        .rightsection{
+           
+            width: 40%;
+        }
+        .rightsection img {
+            display: flex;
+    width: 89%;
+    margin-left: 10px;
+    margin-top: 100px;
+        }
+        .leftsection{
+            width: 40%;
+            font-size: 1.8rem;
+        }
+        .sentance{
+            margin-top: 244px;
+            margin-left: 160px;
+        }
+        #element{
+            color: #3cb4f9;
+        }
+        .blue{
+            color: #3cb4f9;
+        }
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /* <!-- ----------------------About me section--------------------   --> */
         
         #about {
@@ -461,7 +452,7 @@
         .contact-right form {
             width: 100%;
         }
-        /*         
+                 
         .form input,
         form textarea {
             width: 100%;
@@ -473,7 +464,7 @@
             color: #fff;
             font-size: 18px;
             border-radius: 6px;
-        } */
+        } 
         
         .contact-left p {
             margin-top: 30px;
@@ -535,11 +526,6 @@
         }
         /* ------------------css for small screen-------------- */
         
-        @media only screen and (max-with: 375px) {
-            .rightsection img {
-                width: 200px;
-            }
-        }
         
         @media (max-width: 768px) {
             nav ul {
@@ -798,48 +784,10 @@
             }
             .work img {
                 width: 422px;
-            }
-            .leftsection {
-                font-size: 1.5rem;
-
-                  padding-left: 115px;
-            }
-            div.leftsection{
-                width: 70%;
-
-            }
-            .firstsection>div {
-                width: 50%;
-                padding-left: 100px;
-                
-            }
-            .rightsection img {
-                width: 400px;
-                margin-top: -51px;
-                padding-right: 200px;
-                margin-left: -57px;
-            }
-            .leftsection {
-                font-size: 1rem;
-                /* margin-top: -45px; */
-                padding-left: 55px;
-            }
-            .firstsection {
-                height: 456px;
-            }
+            }     
+            
         }
         @media screen and (min-width: 480px) and (max-width: 768px) {
-            .firstsection > div {
-    width: 50%;
-    padding-left: 57px;
-    font-size: 1rem;
-  }
-  .rightsection img {
-    width: 400px;
-    margin-top: -51px;
-    padding-right: 200px;
-    margin-left: -28px;
-  }
   .about-col-1 {
     margin-bottom: -38px;
   }
@@ -888,6 +836,7 @@
 </head>
 
 <body>
+    <main>
     <header>
         <div class="nav-container">
             <div class="left">Nir portfolio</div>
@@ -908,22 +857,23 @@
             </div>
         </div>
     </header>
-
     <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                <b>Hey!!</b>...My Name Is <span class="purple">Nir</span>
-                <div>And I Am a Passionate</div>
-                <span id="element"></span>
-                <div class="button">
-                    <!-- <button class="btn3">Download Resume</button>
-                    <button class="btn3">Visit Github</button> -->
-                </div>
-            </div>
-            <div class="rightsection">
-                <img src="mind.png" alt="#" />
-            </div>
-        </section>
+    <section class="firstsection">
+        <div class="leftsection">
+            <div class="sentance">
+            <b>Hey!!</b>...My Name Is <span class="blue">Nir</span>
+            <div>And I Am a Passionate</div>
+            <span id="element"></span>
+            
+            </div>            
+        </div>
+        <div class="rightsection">
+            <img src="mind.png" alt="#" />
+        </div>
+    </section>
+</main>
+
+
 
         <!-- ----------------------About me section--------------------   -->
 
@@ -1090,15 +1040,18 @@
 
         </div>
     </main>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Graphics Designer','Content Creator'],
+      typeSpeed: 50,
+      loop:true
+    });
+  </script>
    
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Graphics Designer', 'Video Editor'],
-            typeSpeed: 50,
-            loop: true
-        });
-    </script>
+   
     <script>
         let tabLinks = document.getElementsByClassName("tab-links");
         let tabContents = document.getElementsByClassName("tab-contents");
