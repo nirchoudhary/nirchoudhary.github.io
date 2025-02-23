@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color:  #000000;
+            background-color: rgb(0, 0, 0);
             text-align: center;
         }
         header {
@@ -40,14 +40,18 @@
             gap: 20px;
         }
         .project-card {
-            background: #1ba4f6;
-            padding: 20px;
-            width: 200px;
+            background: white;
+            padding: 10px;
+            width: 220px;
             text-align: center;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             transition: transform 0.3s;
+        }
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
         }
         .project-card:hover {
             transform: scale(1.05);
@@ -79,7 +83,7 @@
 <body>
     <header>
         <nav>
-            <h1> My Project</h1>
+            <h1>Your Project</h1>
             <ul>
                 <li><a href="#projects">Projects</a></li>
             </ul>
@@ -89,9 +93,18 @@
     <section id="projects">
         <h2>Project Showcase</h2>
         <div class="project-gallery">
-            <div class="project-card" onclick="openModal('')">Project 1</div>
-            <div class="project-card" onclick="openModal('')">Project 2</div>
-            <div class="project-card" onclick="openModal('')">Project 3</div>
+            <div class="project-card" onclick="openModal('https://yourproject1.com')">
+                <img src="image/image1_0.jpg" alt="Project 1">
+                <p>Project 1</p>
+            </div>
+            <div class="project-card" onclick="openModal('https://yourproject2.com')">
+                <img src="image/project-3.jpg" alt="Project 2">
+                <p>Project 2</p>
+            </div>
+            <div class="project-card" onclick="openModal('https://yourproject3.com')">
+                <img src="image/project-4.png" alt="Project 3">
+                <p>Project 3</p>
+            </div>
         </div>
     </section>
     
