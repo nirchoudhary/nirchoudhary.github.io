@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -20,17 +21,12 @@
             text-align: center;
         }
         nav ul {
+            font-size: xx-large;
             list-style: none;
-            padding: 0;
+            padding: 10PX;
+            font-weight: 500;
         }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
+        
         #projects {
             padding: 50px;
         }
@@ -83,10 +79,7 @@
 <body>
     <header>
         <nav>
-            <h1>Your Project</h1>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
+            <h1>MY PROJECTS</h1>
         </nav>
     </header>
     
@@ -96,6 +89,7 @@
             <div class="project-card" onclick="openModal('https://yourproject1.com')">
                 <img src="image/image1_0.jpg" alt="Project 1">
                 <p>Project 1</p>
+                <p>Future of AI</p>
             </div>
             <div class="project-card" onclick="openModal('https://yourproject2.com')">
                 <img src="image/project-3.jpg" alt="Project 2">
