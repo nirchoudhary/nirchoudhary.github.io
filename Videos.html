@@ -61,14 +61,11 @@
 <body>
     <h1>My YouTube Videos</h1>
     <div class="gallery">
-        <div class="video" onclick="openModal('VIDEO_ID_1')">
-            <img src="https://youtu.be/a-hl85uqvlg?si=UIs55PukwVLckKKL" alt="Video Thumbnail">
+        <div class="video" onclick="openModal('a-hl85uqvlg')">
+            <img src="https://img.youtube.com/vi/a-hl85uqvlg/maxresdefault.jpg" alt="Video Thumbnail">
         </div>
-        <div class="video" onclick="openModal('VIDEO_ID_2')">
-            <img src="https://youtube.com/shorts/-bHf4Jfdpaw?si=QH1g8-80B092kkx7" alt="Video Thumbnail">
-        </div>
-        <div class="video" onclick="openModal('VIDEO_ID_2')">
-            <img src="https://www.instagram.com/reel/C0NCCMqSAL5/?igsh=MWczMmtpNHdudnRubA==" alt="Video Thumbnail">
+        <div class="video" onclick="openModal('-bHf4Jfdpaw')">
+            <img src="https://img.youtube.com/vi/-bHf4Jfdpaw/maxresdefault.jpg" alt="Video Thumbnail">
         </div>
     </div>
 
@@ -77,20 +74,20 @@
             <span class="close" onclick="closeModal()">&times;</span>
             <iframe id="youtubePlayer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
             <br>
-            <a id="watchOnYouTube" href="" target="_blank">Watch on YouTube</a>
+            <a id="watchOnYouTube" href="#" target="_blank">Watch on YouTube</a>
         </div>
     </div>
 
     <script>
-    function openModal(videoId) {
-        document.getElementById('youtubePlayer').src = 'https://www.youtube.com/embed/' + videoId;
-        document.getElementById('watchOnYouTube').href = 'https://www.youtube.com/watch?v=' + videoId;
-        document.getElementById('videoModal').style.display = 'flex';
-    }
-    function closeModal() {
-        document.getElementById('videoModal').style.display = 'none';
-        document.getElementById('youtubePlayer').src = '';
+        function openModal(videoId) {
+            document.getElementById('youtubePlayer').src = 'https://www.youtube.com/embed/' + videoId;
+            document.getElementById('watchOnYouTube').href = 'https://www.youtube.com/watch?v=' + videoId;
+            document.getElementById('videoModal').style.display = 'flex';
         }
-     </script>
+        function closeModal() {
+            document.getElementById('videoModal').style.display = 'none';
+            document.getElementById('youtubePlayer').src = '';
+        }
+    </script>
 </body>
 </html>
