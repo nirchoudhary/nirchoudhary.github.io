@@ -6,31 +6,42 @@
     <title>YouTube Video Gallery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        /* Styling for the entire page with a gradient background */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             text-align: center;
+            color: #fff;
         }
+        /* Grid layout for the video gallery */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             padding: 20px;
         }
+        /* Styling for individual video items */
         .video {
             position: relative;
             cursor: pointer;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.2);
             padding: 10px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
         }
+        /* Hover effect to slightly enlarge videos */
+        .video:hover {
+            transform: scale(1.05);
+        }
+        /* Ensuring thumbnails fill their container properly */
         .video img {
             width: 100%;
             border-radius: 10px;
         }
+        /* Styling for the modal (popup) */
         .modal {
             display: none;
             position: fixed;
@@ -42,6 +53,7 @@
             justify-content: center;
             align-items: center;
         }
+        /* Styling for the modal content */
         .modal-content {
             background: #fff;
             padding: 20px;
@@ -49,6 +61,7 @@
             position: relative;
             max-width: 90%;
         }
+        /* Close button styling */
         .close {
             position: absolute;
             top: 10px;
@@ -61,6 +74,7 @@
 <body>
     <h1>My YouTube Videos</h1>
     <div class="gallery">
+        <!-- Individual video items with onclick event to open modal -->
         <div class="video" onclick="openModal('a-hl85uqvlg')">
             <img src="https://img.youtube.com/vi/a-hl85uqvlg/maxresdefault.jpg" alt="Video Thumbnail">
         </div>
@@ -72,21 +86,25 @@
         </div>
     </div>
 
+    <!-- Modal structure for displaying YouTube videos -->
     <div id="videoModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <iframe id="youtubePlayer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
             <br>
-            <a id="watchOnYouTube" href="#" target="_blank">click Here</a>
+            <a id="watchOnYouTube" href="#" target="_blank">Click Here</a>
         </div>
     </div>
 
     <script>
+        /* Function to open modal and load the selected video */
         function openModal(videoId) {
             document.getElementById('youtubePlayer').src = 'https://www.youtube.com/embed/' + videoId;
             document.getElementById('watchOnYouTube').href = 'https://www.youtube.com/watch?v=' + videoId;
             document.getElementById('videoModal').style.display = 'flex';
         }
+        
+        /* Function to close modal and stop video playback */
         function closeModal() {
             document.getElementById('videoModal').style.display = 'none';
             document.getElementById('youtubePlayer').src = '';
