@@ -1,275 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nir - developer portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nir - Digital Marketing Executive</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-         <!-- Background audio -->
+  <!-- Background audio -->
   <audio autoplay loop>
     <source src="WhatsApp Video 2024-11-23 at 00.57.22_f2b85b1d.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
-    <main>
+  <main>
+    <!-- Navbar -->
     <header>
-        <div class="nav-container">
-            <div class="left">Nir portfolio</div>
-            <!-- Burger menu icon -->
-            <div class="menu-icon" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <div class="right">
-                <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contect">Contact</a></li>
-                </ul>
-            </div>
+      <div class="nav-container">
+        <div class="left">Nir Portfolio</div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
+        <div class="right">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <main>
-    
+
+    <!-- Hero Section -->
     <section class="firstsection" id="Home">
-        <div class="leftsection">
-            <div class="sentance">
-            <b><h3>Hey!<h3></b>My Name Is <span style="color:#1ba4f6;">Nir</span>
-            <div>And I Am a Passionate</div>
-            <h1><span id="element" style="color: #1ba4f6;"></span></h1>
-            
-            </div>            
+      <div class="leftsection">
+        <div class="sentance">
+          <h3>Hey!</h3>
+          My Name is <span style="color:#1ba4f6;">Nir</span>
+          <div>I’m a passionate</div>
+          <h1><span id="element" style="color:#1ba4f6;"></span></h1>
         </div>
-        <div class="rightsection">
-            <img src="nir.jpg" alt="#" />
-        </div>
+      </div>
+      <div class="rightsection">
+        <img src="nir.jpg" alt="Nir" />
+      </div>
     </section>
-</main>
 
-
-
-        <!-- ----------------------About me section--------------------   -->
-
-        <div class="about" id="About">
-            <div class="container">
-                <div class="row">
-<!--                <div class="about-col-1">
-                        <img src="about-Photoroom.png-Photoroom (1).png" alt="#" />
-                    </div> -->
-                    <div class="about-col-2">
-                        <h1 class="sub-title2">About Me</h1>
-                        <p>
-                           I am Nir Choudhary, currently pursuing my B.Tech degree at Indore Institute of Science and Technology in Indore. With a strong foundation in technology and a passion for innovation, I am dedicated to honing my skills and expanding my knowledge in the field of computer science.
-                           I specialize in Java programming and front-end development, leveraging my technical expertise to create efficient and user-friendly applications.
-                        </p>
-                        <div class="tab-title">
-                            <p class="tab-links active-link" onclick="openTab('skills')">
-                                Skills
-                            </p>
-                            <p class="tab-links" onclick="openTab('experience')">
-                                Experience
-                            </p>
-                            <p class="tab-links" onclick="openTab('education')">
-                                Education
-                            </p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <!-- <li><span>UI/UX</span><br />Design Web/App interfaces</li> -->
-                                <li><span>Video Garphi</span><br />Create a content</li>
-                                <li><span>Content Creation</span><br />Video Editing</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>2024</span><br />Design Web/App interfaces</li>
-                                <li><span>2023</span><br />Web development</li>
-                                <li><span>2019</span><br />Video Creation</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li>
-                                    <span>2019-22</span><br/>Complete My Diploma
-                                </li>
-                                <li>
-                                    <span>2023-26</span><br />Then i Applied For Btech Course In CSE Branch
-                                </li>
-<!--                                 <li><span>2027</span><br />Finally Archive My Dream Job</li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <!-- About Section -->
+    <section class="about" id="About">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-2">
+            <h1 class="sub-title2">About Me</h1>
+            <p>
+              I am <b>Nir Choudhary</b>, a passionate <b>Digital Marketing Executive</b> skilled in strategy, social media, and content marketing. 
+              I specialize in crafting data-driven campaigns that build brand presence and generate engagement.
+              Alongside marketing, I’m also experienced in <b>video editing</b> and <b>content creation</b>, helping brands tell their stories in visually powerful ways.
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+              <p class="tab-links" onclick="openTab('experience')">Experience</p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
             </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Digital Marketing</span><br>SEO, SEM, Google Ads, Meta Ads</li>
+                <li><span>Video Editing</span><br>Social Media Reels, Brand Ads, YouTube Videos</li>
+                <li><span>Content Creation</span><br>Creative strategy, Copywriting, Visual storytelling</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2024 - Present</span><br>Digital Marketing Executive at BrandGlow Media</li>
+                <li><span>2023</span><br>Freelance Video Editor & Content Strategist</li>
+                <li><span>2019</span><br>Started my creative journey in visual storytelling</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2019–22</span><br>Diploma in Civil Engineering</li>
+                <li><span>2023–26</span><br>B.Tech in Computer Science (CSE) - IIST, Indore</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- --------------------------services--------------------------->
-        <div id="services">
-            <div class="container">
-                <h1 class="sub-title">My Services</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Web Design</h2>
-                        <p>
-                             With expertise in modern design trends and usability, I creates websites that enhance brand identity and user engagement.
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div>
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-bullhorn"></i>
+            <h2>Digital Marketing</h2>
+            <p>
+              From SEO to paid ads, I design and execute marketing strategies that increase visibility and drive results.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
 
-                    <!-- <div>
-                        <i class="fa-solid fa-crop"></i>
-                        <h2>UI/UX Design</h2>
-                        <p>
-                            With a focus on user-centric design, I ensures seamless navigation and an enhanced user experience.
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div> -->
+          <div>
+            <i class="fa-solid fa-video"></i>
+            <h2>Video Editing</h2>
+            <p>
+              I create visually stunning and emotionally engaging videos that communicate your brand story effectively.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
 
-                    <div>
-                        <i class="fa-solid fa-video"></i>
-                        <h2>Video Creation</h2>
-                        <p>
-                           With expertise in animation, transitions, and sound design, Nir ensures visually appealing and impactful productions.
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div>
-                </div>
-            </div>
+          <div>
+            <i class="fa-solid fa-pen-nib"></i>
+            <h2>Content Creation</h2>
+            <p>
+              I produce compelling content—whether it's scripts, visuals, or copy—that connects with your audience and builds trust.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
-        <!-- -------------------------------portfolio------------------ -->
-        <div id="portfolio">
-            <div class="container">
-                <h1 class="sub-title">My Work</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="work-1.jpg" alt="work-1" />
-                        <div class="layer">
-                            <h3> web application </h3>
-                            <p>
-                               Skilled in front-end and back-end technologies, I specializes in building seamless web applications tailored to client requirements.
-                            </p>
-                            <a href="web.html"><i class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="work-2.jpg" alt="work-2" />
-                        <div class="layer">
-                            <h3>cinematography</h3>
-                            <p>
-                                I deliver cinematic visuals that captivate audiences, enhance storytelling, and elevate brand impact.
-                            </p>
-                            <a href="Videos.html"><i class="fa-solid fa-hashtag"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="work-3.jpg" alt="work-3" />
-                        <div class="layer">
-                            <h3>Video Editing</h3>
-                            <p>
-                                With expertise in editing tools and creative storytelling, I delivers high-quality videos tailored to client needs.
-                            </p>
-                            <a href=""><i class="fa-solid fa-photo-film"></i></a>
-                        </div>
+      </div>
+    </section>
 
-                    </div>
-                </div>
-<!--                 <a href="#" class="btn">See More</a> -->
-
-
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.jpg" alt="work-1" />
+            <div class="layer">
+              <h3>Social Media Campaigns</h3>
+              <p>
+                Developed and managed paid and organic campaigns that improved engagement and lead generation.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
+          </div>
+
+          <div class="work">
+            <img src="work-2.jpg" alt="work-2" />
+            <div class="layer">
+              <h3>Video Productions</h3>
+              <p>
+                Edited promotional and storytelling videos with creative transitions and engaging visuals.
+              </p>
+              <a href="#"><i class="fa-solid fa-video"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="work-3.jpg" alt="work-3" />
+            <div class="layer">
+              <h3>Content Strategy</h3>
+              <p>
+                Created social media content calendars and ad copies tailored to audience behavior and trends.
+              </p>
+              <a href="#"><i class="fa-solid fa-pen"></i></a>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- -------------------Contact----------------------- -->
-        <div id="contect">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-solid fa-paper-plane"></i>choudharynir55@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i></i>9098388368</p>
-                        <div class="social-icons">
-                            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/its_nir_90/"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://github.com/nirchoudhary"><i class="fa-brands fa-github"></i></i></a>
-                            <a href="https://www.linkedin.com/in/nir-choudhary-0117662a0/"><i class="fa-brands fa-linkedin-in"></i></i></a>
-                        </div>
-<!--                         <a href="DSA Note no. 1.pdf" download class="btn btn2">Download CV</a> -->
-
-                    </div>
-                    <div class="contact-right">
-                        <form action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="f1313ad0-bcbe-420f-bd2f-ca61a309a258">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="Email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="Submit" class="btn btn2">Submit</button>
-                        </form>
-                        
-                    </div>
-                </div>
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> choudharynir55@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 9098388368</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/its_nir_90/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://github.com/nirchoudhary"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/nir-choudhary-0117662a0/"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
-            <div class="copyright">
-                <p>Copyright <i class="fa-regular fa-copyright"></i> this side nir choudhary <i class="fa-solid fa-heart"></i></p>
-            </div>
+          </div>
 
+          <div class="contact-right">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="f1313ad0-bcbe-420f-bd2f-ca61a309a258">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="Email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="Submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
         </div>
-    </main>
-    
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-     <!-- Setup and start animation! -->
+      </div>
+
+      <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Nir Choudhary |
+          Built with <i class="fa-solid fa-heart"></i> by Nir</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Typed Text Animation -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#element', {
-      strings: ['Digital Marketing Executive ', 'video Editor','Content Creator'],
+      strings: ['Digital Marketing Executive', 'Video Editor', 'Content Creator'],
       typeSpeed: 50,
-      loop:true
+      loop: true
     });
   </script>
-   
-   
-    <script>
-        let tabLinks = document.getElementsByClassName("tab-links");
-        let tabContents = document.getElementsByClassName("tab-contents");
 
-        function openTab(tabName) {
-            for (let i = 0; i < tabLinks.length; i++) {
-                tabLinks[i].classList.remove("active-link");
-            }
-            for (let i = 0; i < tabContents.length; i++) {
-                tabContents[i].classList.remove("active-tab");
-            }
-            // for (let i = 0; i < tabContents.length; i++) {
-            //     tabContents[i].classList.remove("active-tab");
-            // }
+  <!-- Tabs JS -->
+  <script>
+    let tabLinks = document.getElementsByClassName("tab-links");
+    let tabContents = document.getElementsByClassName("tab-contents");
 
-            document.getElementById(tabName).classList.add("active-tab");
-            event.currentTarget.classList.add("active-link");
-        }
+    function openTab(tabName) {
+      for (let link of tabLinks) link.classList.remove("active-link");
+      for (let content of tabContents) content.classList.remove("active-tab");
 
-        for (let i = 0; i < tabLinks.length; i++) {
-            tabLinks[i].addEventListener("click", function() {
-                openTab(this.getAttribute("onclick").split("'")[1]);
-            });
-        }
-    </script>
-    <script>
-        function toggleMenu() {
-            var navList = document.querySelector('.nav-container .right ul');
-            navList.classList.toggle('show');
-        }
-    </script>
+      document.getElementById(tabName).classList.add("active-tab");
+      event.currentTarget.classList.add("active-link");
+    }
+  </script>
+
+  <!-- Mobile Menu -->
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-container .right ul').classList.toggle('show');
+    }
+  </script>
 </body>
-
 </html>
-
